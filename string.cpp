@@ -5,8 +5,8 @@ bool is_mark(char);
 size_t word_size(size_t,size_t,std::string&);
 void plus_word(const std::string&, std::string&, size_t, size_t);
 int main() {
-	SetConsoleCP(CP_UTF8);
-	SetConsoleOutputCP(CP_UTF8);
+	SetConsoleCP(1251);
+	SetConsoleOutputCP(1251);
 	std::string str{};
 	std::cout << "Enter your string" << std::endl;
 	std::getline(std::cin, str);
@@ -80,4 +80,5 @@ void plus_word(const std::string& str, std::string& answer, size_t word_start, s
 		answer += str[i];
 	}
 	answer = answer + ' ';
+
 }
